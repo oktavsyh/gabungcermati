@@ -13,14 +13,14 @@ try:
     EC.presence_of_element_located((By.NAME, "email"))
   )
 finally:
-  driver.find_element_by_name("email").send_keys("oktaviansyah47@yahoo.com")
+  driver.find_element_by_name("email").send_keys("youremail@yahoo.com")
   driver.find_element_by_name("password").send_keys("yourpassword1")
   driver.find_element_by_name("confirmPassword").send_keys("yourpassword1")
-  driver.find_element_by_name("firstName").send_keys("Okta")
-  driver.find_element_by_name("lastName").send_keys("Viansyah")
-  driver.find_element_by_name("mobilePhone").send_keys("085157972253")
+  driver.find_element_by_name("firstName").send_keys("First Name")
+  driver.find_element_by_name("lastName").send_keys("Last Name")
+  driver.find_element_by_name("mobilePhone").send_keys("085112343210")
   city = driver.find_element_by_name("residenceCity")
-  city.send_keys("Bogor")
+  city.send_keys("YourCity")
   try:
     element = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.CLASS_NAME, "autocomplete-list-item"))
